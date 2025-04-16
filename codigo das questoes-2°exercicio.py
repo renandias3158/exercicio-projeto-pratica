@@ -60,3 +60,21 @@ elif operador != (1,2,3,4):
     print("operador INVALIDO")
 '''
 '''questao 5'''
+'''arry = []
+valor1 = input("insira o primeiro valor!\n-->")
+float(valor1)
+valor2 = input("insira o segundo valor!\n-->")
+float(valor2)
+valor3 = input("insira o terceiro valor!\n-->")
+arry.append(valor1,valor2,valor3)
+arry.sort()
+print(arry)'''
+'''questao 6'''
+dezena = ["vinte","trinta"]
+unidade = ["um","dois", "trés", "quatro", "cinco","seis","sete","oito","nove"]
+valor = input("insira um numero entre 20 e 39!\n-->")
+int(valor)
+if valor < 20 or valor > 39:
+    print("Valor inválido!!")
+elif valor == 20:
+    print()
