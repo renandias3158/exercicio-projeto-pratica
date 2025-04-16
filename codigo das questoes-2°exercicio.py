@@ -132,15 +132,80 @@ else:
     print(f"O valor em fatorial é igual a: {fatorial}") '''
 #repetições
 '''questao 1'''
-arry = []
+'''arry = []
 nome = []
 idade = []
-while idade != 0:
-    name = input("insira o nome!")
+while True:
+    name = input("Insira o nome (ou digite 'sair' para encerrar): ")
+    if name.lower() == 'sair':
+        break
     nome.append(name)
-    nome.sort()
-    age = int(input("insira a idade!"))
+    age = int(input("Insira a idade (ou digite 0 para encerrar): "))
+    if age == 0:
+        break
     idade.append(age)
-    idade.sort()
-    arry.append(nome,idade)
-print("as idades e nomes insirados foram:\n-->{arry}")
+    arry.append((name, age))  
+print("As idades e nomes inseridos foram:")
+for n, i in arry:
+    print(f"Nome: {n}, Idade: {i}")'''
+'''questao 2'''
+'''
+soma = 0
+for numero in range(1, 51):
+    if numero % 2 == 0:
+        soma += numero  
+print("A soma dos números pares de 1 a 50 é:", soma)'''
+'''questao 3'''
+'''
+total_homens = 0
+total_mulheres = 0
+menores_trabalhando = 0
+soma_renda_homens = 0
+soma_renda_mulheres = 0
+menor_renda = float('inf')
+nome_menor_renda = ""
+total_nao_trabalham = 0
+soma_idade = 0
+total_pessoas = 0
+while True:
+    nome = input("Insira o nome (ou digite 'FIM' para encerrar): ")
+    if nome.upper() == "FIM":
+        break
+    idade = int(input("Insira a idade (0 a 100): "))
+    while idade < 0 or idade > 100:
+        idade = int(input("Idade inválida. Insira a idade (0 a 100): "))
+    sexo = input("Insira o sexo (M/F): ").upper()
+    while sexo not in ['M', 'F']:
+        sexo = input("Sexo inválido. Insira o sexo (M/F): ").upper()
+    trabalha = input("Trabalha? (V/F): ").upper()
+    while trabalha not in ['V', 'F']:
+        trabalha = input("Resposta inválida. Trabalha? (V/F): ").upper()
+    salario_minimos = float(input("Quantos salários mínimos recebe por mês? "))
+    if sexo == 'M':
+        total_homens += 1
+        soma_renda_homens += salario_minimos
+    else:
+        total_mulheres += 1
+        soma_renda_mulheres += salario_minimos
+    if idade < 18 and trabalha == 'V':
+        menores_trabalhando += 1
+    if trabalha == 'V' and salario_minimos < menor_renda:
+        menor_renda = salario_minimos
+        nome_menor_renda = nome
+    if trabalha == 'F':
+        total_nao_trabalham += 1
+    soma_idade += idade
+    total_pessoas += 1
+media_idade = soma_idade / total_pessoas if total_pessoas > 0 else 0
+media_renda_homens = soma_renda_homens / total_homens if total_homens > 0 else 0
+media_renda_mulheres = soma_renda_mulheres / total_mulheres if total_mulheres > 0 else 0
+print("\nResultados da pesquisa:")
+print(f"Quantidade de homens entrevistados: {total_homens}")
+print(f"Quantidade de mulheres entrevistadas: {total_mulheres}")
+print(f"Quantidade de pessoas menores de 18 anos que trabalham: {menores_trabalhando}")
+print(f"Renda média dos homens: {media_renda_homens:.2f} salários mínimos")
+print(f"Renda média das mulheres: {media_renda_mulheres:.2f} salários mínimos")
+print(f"Nome e renda da pessoa que trabalha e que tem a menor renda: {nome_menor_renda}, {menor_renda:.2f} salários mínimos")
+print(f"Quantidade de pessoas que não trabalham: {total_nao_trabalham}")
+print(f"Média de idade dos entrevistados: {media_idade:.2f} anos")'''
+'''questao 4'''
