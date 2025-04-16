@@ -1,3 +1,4 @@
+#exercicio sobre condicionais:
 """questao 1 """
 """
 numero = input("insira um numero\n-")
@@ -71,8 +72,6 @@ arry.sort()
 print(arry)'''
 '''questao 6'''
 '''
-dezena = ["vinte","trinta"]
-unidade = ["um","dois", "trés", "quatro", "cinco","seis","sete","oito","nove"]
 valor = input("insira um numero entre 20 e 39!\n-->")
 int(valor)
 if valor < 20 or valor > 39:
@@ -117,3 +116,31 @@ elif valor == 38:
     print("trinta e oito")
 elif valor == 39:
     print("trinta e nove")'''
+'''questao 7'''
+'''
+valor = int(input("Insira o valor: ")) 
+cont = 1
+fatorial = 1  
+if valor < 0:
+    print("Fatorial não é definido para números negativos.")
+elif valor == 0:
+    print("O fatorial de 0 é igual a 1.")
+else:
+    while cont <= valor:
+        fatorial *= cont 
+        cont += 1  
+    print(f"O valor em fatorial é igual a: {fatorial}") '''
+#repetições
+'''questao 1'''
+arry = []
+nome = []
+idade = []
+while idade != 0:
+    name = input("insira o nome!")
+    nome.append(name)
+    nome.sort()
+    age = int(input("insira a idade!"))
+    idade.append(age)
+    idade.sort()
+    arry.append(nome,idade)
+print("as idades e nomes insirados foram:\n-->{arry}")
