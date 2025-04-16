@@ -70,6 +70,7 @@ arry.append(valor1,valor2,valor3)
 arry.sort()
 print(arry)'''
 '''questao 6'''
+'''
 dezena = ["vinte","trinta"]
 unidade = ["um","dois", "trés", "quatro", "cinco","seis","sete","oito","nove"]
 valor = input("insira um numero entre 20 e 39!\n-->")
@@ -77,4 +78,42 @@ int(valor)
 if valor < 20 or valor > 39:
     print("Valor inválido!!")
 elif valor == 20:
-    print()
+    print("vinte")
+elif valor == 21:
+    print("vinte e um")
+elif valor == 22:
+    print("vinte e dois")
+elif valor == 23:
+    print("vinte e trés")
+elif valor == 24:
+    print("vinte e quatro")
+elif valor == 25:
+    print("vinte e cinco")
+elif valor == 26:
+    print("vinte e seis")
+elif valor == 27:
+    print("vinte e sete")
+elif valor == 28:
+    print("vinte e oito")
+elif valor == 29:
+    print("vinte e nove")
+elif valor == 30:
+    print(("trinta")
+elif valor == 31:
+    print("trinta e um")
+elif valor == 32:
+    print("trinta e dois")
+elif valor == 33:
+    print("trinta e trés")
+elif valor == 34:
+    print("trinta e quatro")
+elif valor == 35:
+    print("trinta e cinco")
+elif valor == 36:
+    print("trinta e seis")
+elif valor == 37:
+    print("trinta e sete")
+elif valor == 38:
+    print("trinta e oito")
+elif valor == 39:
+    print("trinta e nove")'''
